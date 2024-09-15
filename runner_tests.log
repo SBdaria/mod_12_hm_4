@@ -1,0 +1,16 @@
+WARNING | Неверный тип данных для объекта Runner
+Traceback (most recent call last):
+  File "/Users/dariadaria/Desktop/Study/Homeworks/Module_12/test_12_4.py", line 18, in test_run
+    test_runner = rt.Runner(('Nika', 'Lenina'))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dariadaria/Desktop/Study/Homeworks/Module_12/rt_with_exceptions.py", line 8, in __init__
+    raise TypeError(f'Имя может быть только строкой, передано {type(name).__name__}')
+TypeError: Имя может быть только строкой, передано tuple
+WARNING | Неверная скорость для Runner
+Traceback (most recent call last):
+  File "/Users/dariadaria/Desktop/Study/Homeworks/Module_12/test_12_4.py", line 8, in test_walk
+    test_runner = rt.Runner('Elsa', speed=-5)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dariadaria/Desktop/Study/Homeworks/Module_12/rt_with_exceptions.py", line 13, in __init__
+    raise ValueError(f'Скорость не может быть отрицательной, сейчас {speed}')
+ValueError: Скорость не может быть отрицательной, сейчас -5
